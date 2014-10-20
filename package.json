@@ -1,0 +1,17 @@
+{
+  "name": "gulp-nexus-studio",
+  "version": "0.0.1",
+  "description": "nexus-studio site",
+  "devDependency": {},
+  "devDependencies": {
+    "gulp": "~3.8.8",
+    "gulp-less": "~1.3.6",
+    "gulp-minify-css": "~0.3.10",
+    "gulp-csscomb": "~3.0.2",
+    "gulp-autoprefixer": "~1.0.1",
+    "gulp-notify": "~2.0.0",
+    "gulp-ngmin": "~0.3.0",
+    "gulp-concat": "~2.4.1",
+    "gulp-minify": "0.0.3"
+  }
+}

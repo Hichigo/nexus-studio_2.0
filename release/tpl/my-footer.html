@@ -1,0 +1,22 @@
+<footer class="my-footer">
+	<div class="footer-wrap">
+<!--
+		<div class="copyright">
+			© 2014 Nexus-studio.
+		</div>
+-->
+		<div class="footer-soc">
+			<h4>Мы в соц. сетях:</h4>
+			<div class="tr">
+				<div class="icon line" ng-repeat="soc in social">
+					<a href="{{ soc.url}}" target="_blank">
+						<svg class="social {{ soc.id }}" viewbox="0 0 32 32">
+							<use xlink:href="{{ soc.xlink }}">
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</footer>

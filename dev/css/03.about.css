@@ -1,0 +1,91 @@
+.flexible-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.content-item {
+  margin: 10px;
+}
+.content-item > * {
+  font-weight: 300;
+}
+.content-item h2 {
+  font-weight: bold;
+}
+textarea {
+  display: block;
+  width: 495px;
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #888888;
+  outline: none;
+  resize: none;
+}
+textarea:focus {
+  border-color: #2371d2;
+}
+.send-btn {
+  width: 150px;
+  height: 40px;
+  margin: 10px 0;
+  background: #2371d2;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.send-btn:hover {
+  background: #ff5722;
+}
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  fill: #ff5722;
+}
+.line {
+  float: left;
+  line-height: 32px;
+}
+.tr {
+  margin-bottom: 10px;
+}
+.tr:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.tr:last-child {
+  margin-top: 20px;
+}
+.social {
+  fill: #000;
+  border: 1px solid #000;
+  padding: 5px;
+  margin-right: 5px;
+  transition: all .4s;
+}
+.twitter:hover {
+  fill: #00aced !important;
+  border-color: #00aced;
+}
+.facebook:hover {
+  fill: #3b5998 !important;
+  border-color: #3b5998;
+}
+.google:hover {
+  fill: #dd4b39 !important;
+  border-color: #dd4b39;
+}
+.vk:hover {
+  fill: #45668e !important;
+  border-color: #45668e;
+}
+.youtube:hover {
+  fill: #bb0000 !important;
+  border-color: #bb0000;
+}

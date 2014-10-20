@@ -1,0 +1,104 @@
+@blue: #2371d2;
+@orange: #ff5722;
+@gray: #888;
+
+.tabbable {
+	margin: 0 auto;
+}
+
+.nav-tabs {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content:flex-start;
+	position: relative;
+}
+
+.nav-tabs-btn {
+	padding: 10px 15px;
+	background: @blue;
+	cursor: pointer;
+	color: #fff;
+	transition: background .4s;
+	user-select: none;
+	margin: 1px;
+	box-sizing: border-box;
+	animation-duration: .4s;
+	animation-fill-mode: both;
+
+	&:hover {
+		animation-name: tremor;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+
+
+.static-text {
+	min-width: 300px;
+	max-width: 300px;
+	margin-right: 20px;
+	float: left;
+	font-weight: 300;
+	text-align: justify;
+	
+	& > h3 {
+		margin-top: 0;
+	}
+}
+
+.tab-pane {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	margin: 0 auto;
+	padding: 10px 15px 10px 0;
+}
+
+.tab-content {
+	overflow: hidden;
+}
+
+.desc-img, desc {
+	min-width: 200px;
+	max-width: 200px;
+	margin: 0 20px 10px 0;
+	font-weight: 300;
+}
+
+.desc-img {
+	height: 200px;
+	position: relative;
+	> svg {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		width: 160px;
+		height: 160px;
+		margin: auto;
+	}
+	> svg {
+		fill: @orange;
+	}
+}
+
+.desc {
+	> * {
+		font-weight: 300;
+	}
+	> h4 {
+		margin-top: 0;
+		font-weight: 800 !important;
+	}
+}
+
+.active {
+	background: @orange !important;
+}

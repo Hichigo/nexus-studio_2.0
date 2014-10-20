@@ -1,0 +1,76 @@
+.tabbable {
+  margin: 0 auto;
+}
+.nav-tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  position: relative;
+}
+.nav-tabs-btn {
+  padding: 10px 15px;
+  background: #2371d2;
+  cursor: pointer;
+  color: #fff;
+  transition: background .4s;
+  user-select: none;
+  margin: 1px;
+  box-sizing: border-box;
+}
+.nav-tabs-btn:last-child {
+  margin-right: 0;
+}
+.nav-tabs-btn:hover {
+  background: #ff5722;
+}
+.static-text {
+  min-width: 300px;
+  max-width: 300px;
+  margin-right: 20px;
+  float: left;
+  font-weight: 300;
+  text-align: justify;
+}
+.static-text > h3 {
+  margin-top: 0;
+}
+.tab-pane {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding: 10px 15px 10px 0;
+}
+.desc-img,
+desc {
+  min-width: 200px;
+  max-width: 200px;
+  margin: 0 20px 10px 0;
+  font-weight: 300;
+}
+.desc-img {
+  height: 200px;
+}
+.desc-img > img {
+  width: 200px;
+}
+.desc-img > svg {
+  fill: #ff5722;
+}
+.desc > * {
+  font-weight: 300;
+}
+.desc > h4 {
+  margin-top: 0;
+  font-weight: 800 !important;
+}
+.active {
+  background: #ff5722 !important;
+}

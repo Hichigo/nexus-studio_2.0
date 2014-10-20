@@ -1,0 +1,52 @@
+<div class="content-page animated bounceInDown">
+	<h1>Cвяжитесь с нами</h1>
+	<div class="flexible-content">
+		<div class="about content-item">
+			<div class="contact">
+				<h2>Контакты</h2>
+				<div class="tr">
+					<div class="icon line">
+						<svg viewbox="0 0 32 32">
+							<use xlink:href="#tag">
+						</svg>
+					</div>
+					<div class="text line">Адрес: <a href="https://www.google.ru/maps/place/%D0%9D%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9+%D0%B1%D1%83%D0%BB.,+79,+%D0%91%D0%B5%D0%BB%D0%B3%D0%BE%D1%80%D0%BE%D0%B4,+%D0%91%D0%B5%D0%BB%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+308009/@50.6001286,36.5883533,18z/data=!4m2!3m1!1s0x41266af7a14ed821:0x474a1f1b34e40760" target="_blank">г. Белгород, Народный б-р дом 79, 2 этаж, офис 207</a>
+					</div>
+				</div>
+				<div class="tr">
+					<div class="icon line">
+						<svg viewbox="0 0 32 32">
+							<use xlink:href="#phone">
+						</svg>
+					</div>
+					<div class="text line">Телефон: +7 (920) 584 99 53 ; +7 (920) 584 99 54</div>
+				</div>
+				<div class="tr">
+					<div class="icon line">
+						<svg viewbox="0 0 32 32">
+							<use xlink:href="#mail">
+						</svg>
+					</div>
+					<div class="text line">E-mail: <a href="mailto:info@nexus-studio.ru">info@nexus-studio.ru</a></div>
+				</div>
+				<div class="tr">
+					<div class="icon line" ng-repeat="soc in social">
+						<a href="{{ soc.url}}" target="_blank">
+							<svg class="social {{ soc.id }}" viewbox="0 0 32 32">
+								<use xlink:href="{{ soc.xlink }}">
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form content-item">
+			<h2>Обратная связь</h2>
+			<form action="">
+				<my-input ng-repeat="label in labels"></my-input>
+				<textarea name="text" cols="30" rows="10" placeholder="Текст сообщения"></textarea>
+				<input class="send-btn" type="submit" value="Отправить">
+			</form>
+		</div>
+	</div>
+</div>
