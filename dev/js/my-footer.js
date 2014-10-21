@@ -13,7 +13,7 @@ nexusApp.directive('myFooter', function() {
 				{
 					id: 'google',
 					xlink: '#google',
-					url: 'https://plus.google.com/u/0/116298012878227766967/about',
+					url: 'https://plus.google.com/+NexusstudioRu31',
 				},
 				{
 					id: 'facebook',

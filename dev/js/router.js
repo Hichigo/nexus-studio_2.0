@@ -11,6 +11,10 @@ nexusApp.config(['$routeProvider', '$locationProvider',
 				templateUrl: 'release/tpl/site.html',
 				controller: 'siteCtrl'
 			}).
+			when('/site/calculator', {
+				templateUrl: '../release/tpl/calculator.html',
+				controller: 'calcCtrl'
+			}).
 			when('/3dgraphic', {
 				templateUrl: 'release/tpl/third.html',
 				controller: 'thirdCtrl'
