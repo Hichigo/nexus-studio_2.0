@@ -68,34 +68,49 @@ nexusCtrl.controller('homeCtrl', ['$location', '$scope',
 }])
 .controller('aboutCtrl', ['$location', '$scope',
 	function($location, $scope) {
-		$scope.labels = ['Ваше имя', 'Ваш E-mail', 'Ваш номер (необязательно)'];
-		$scope.social = [
-			{
-				id: 'twitter',
-				xlink: '#twitter',
-				url: '#',
-			},
-			{
-				id: 'google',
-				xlink: '#google',
-				url: 'https://plus.google.com/u/0/116298012878227766967/about',
-			},
-			{
-				id: 'facebook',
-				xlink: '#facebook',
-				url: 'https://www.facebook.com/nexus.studio.bel/timeline#',
-			},
-			{
-				id: 'vk',
-				xlink: '#vk',
-				url: 'http://vk.com/nexusstudioru',
-			},
-			{
-				id: 'youtube',
-				xlink: '#youtube',
-				url: 'http://www.youtube.com/channel/UCbWoURkJ5nXueJQjWpXEraA?guided_help_flow=3',
-			}
-		];
+		$scope.data = {
+			social: [
+				{
+					id: 'twitter',
+					xlink: '#twitter',
+					url: '#',
+				},
+				{
+					id: 'google',
+					xlink: '#google',
+					url: 'https://plus.google.com/u/0/116298012878227766967/about',
+				},
+				{
+					id: 'facebook',
+					xlink: '#facebook',
+					url: 'https://www.facebook.com/nexus.studio.bel/timeline#',
+				},
+				{
+					id: 'vk',
+					xlink: '#vk',
+					url: 'http://vk.com/nexusstudioru',
+				},
+				{
+					id: 'youtube',
+					xlink: '#youtube',
+					url: 'http://www.youtube.com/channel/UCbWoURkJ5nXueJQjWpXEraA?guided_help_flow=3',
+				}
+			],
+			labels: [
+				{
+					lbl: 'Ваше имя (обязательно)',
+					name: 'name'
+				},
+				{
+					lbl: 'Ваш E-mail (обязательно)',
+					name: 'mail'
+				},
+				{
+					lbl: 'Ваш номер (необязательно)',
+					name: 'phone'
+				},
+			]
+		};
 
 		if ($(document).height() <= $(window).height())
 			$(".my-footer").addClass("fix-footer-bottom");
@@ -108,5 +123,24 @@ nexusCtrl.controller('homeCtrl', ['$location', '$scope',
 		bar.css({
 			'width': link.eq(4).innerWidth()+'px',
 			'left': link.eq(4).position().left+'px'
+		});
+		
+		$('#send-mail').on('click', function() {
+			var name = $('input[name=name]').val(),
+					mail = $('input[name=mail]').val(),
+					text = $('textarea[name=text]').val();
+			if(name != '' && mail != '' && text != '') {
+				var q = $('#form-send-mail').serialize();
+				$.ajax({
+					type: "GET",
+					url: "release/php/mail.php",
+					data: q
+				})
+				.done(function( data ) {
+					alert( data );
+				});
+			} else {
+				alert('Заполните все обязательные поля!');
+			}
 		});
 }]);
