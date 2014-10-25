@@ -1,0 +1,97 @@
+@blue: #2371d2;
+@orange: #ff5722;
+@gray: #888;
+
+@media (max-width: 920px) {
+	.nav-wrap,
+	.footer-wrap {
+		min-width: 300px;
+	}
+	.menu {
+		width: 90px;
+		height: 90px;
+		overflow: hidden;
+		flex-flow: column nowrap;
+		position: absolute;
+		top: 0;
+		right: 0;
+		> a {
+			display: none;
+//			border-bottom: 1px solid @blue;
+			height: 55px;
+			line-height: 55px;
+			padding: 0 20px;
+		}
+	}
+	.show-menu {
+		> a {
+			display: block;
+		}
+		.show-hide {
+			top: 0;
+			
+			> div {
+				background: @orange;
+			}
+		}
+		.wrap-btn {
+			margin: 0 auto;
+		}
+	}
+	.wrap-btn {
+		display: block;
+	}
+	.bar-nav {
+		display: none;
+	}
+	//tabs
+	.logo img {
+		width: 130px;
+		margin: 207px auto 20px;
+	}
+	.video-line {
+		height: 250px;
+		.arch {
+			font-size: 0.9em;
+		}
+	}
+	.content-page {
+		width: 100%;
+		max-width: 920px;
+		min-width: 300px;
+		padding: 0 15px;
+		box-sizing: border-box;
+	}
+	.static-text {
+		max-width: 920px;
+		width: 100%;
+	}
+	
+	.tabbable {
+		float: left;
+		width: 100%;
+		max-width: 920px;
+		min-width: 300px;
+	}
+	
+	.nav-tabs {
+		flex-flow: column nowrap;
+	}
+	.desc-img {
+		min-width: 100%;
+		margin: 20px 0 0 0;
+	}
+	.tab-pane {
+		flex-flow: column;
+	}
+	.text-input {
+		width: 100%;
+		max-width: 920px;
+		min-width: 300px;
+	}
+	textarea[name=text] {
+		width: 100%;
+		max-width: 920px;
+		min-width: 300px;
+	}
+}

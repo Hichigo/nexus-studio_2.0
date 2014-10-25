@@ -4,7 +4,17 @@ nexusApp.directive('topNav', ['$location', function($location) {
     templateUrl: 'release/tpl/top-nav.html',
 		replace: true,
 		controller: function($scope) {
-			
+			var lines = $('.show-hide > div');
+			var menu = $('.menu');
+			$('.show-hide').click(function() {
+				menu.toggleClass('show-menu');
+				lines.eq(0).toggleClass('cross-top');
+				lines.eq(1).toggleClass('op');
+				lines.eq(2).toggleClass('cross-bot');
+				setTimeout(function() {
+					lines.toggleClass('reverse-trans');
+				}, 400);
+  		});
 		},
 		link: function($scope, $el) {
 			var bar = $el.find('.menu > .bar-nav'),
