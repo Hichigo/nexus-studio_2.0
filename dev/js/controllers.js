@@ -26,19 +26,7 @@ nexusCtrl.controller('homeCtrl', ['$location', '$scope',
 		});
 }]).controller('calcCtrl', ['$location', '$scope',
 	function($location, $scope) {
-//		if ($(document).height() <= $(window).height())
-//			$(".my-footer").addClass("fix-footer-bottom");
-//		else
 		$(".my-footer").removeClass("fix-footer-bottom");
-//		
-//		var bar = $('.nav').find('.menu > .bar-nav'),
-//				link = $('.nav').find('.menu > a');
-//		link.removeClass('active-btn');
-//		link.eq(1).addClass('active-btn');
-//		bar.css({
-//			'width': link.eq(1).innerWidth()+'px',
-//			'left': link.eq(1).position().left+'px'
-//		});
 }]).controller('thirdCtrl', ['$location', '$scope',
 		function($location, $scope) {
 			if ($(document).height() <= $(window).height()){
@@ -121,8 +109,6 @@ nexusCtrl.controller('homeCtrl', ['$location', '$scope',
 			]
 		};
 
-		
-		
 		var bar = $('.nav').find('.menu > .bar-nav'),
 				link = $('.nav').find('.menu > a');
 		link.removeClass('active-btn');

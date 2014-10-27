@@ -3,6 +3,11 @@ nexusApp.config(['$routeProvider', '$locationProvider',
 		$locationProvider.html5Mode(true);
 //		$locationProvider.hashPrefix('!');
 		$routeProvider.
+			when('/', {
+				redirectTo: '/home',
+				templateUrl: 'release/tpl/home.html',
+				controller: 'homeCtrl'
+			}).
 			when('/home', {
 				templateUrl: 'release/tpl/home.html',
 				controller: 'homeCtrl'
@@ -28,6 +33,8 @@ nexusApp.config(['$routeProvider', '$locationProvider',
 				controller: 'aboutCtrl'
 			}).
 			otherwise({
-				redirectTo: '/home'
+				redirectTo: '/404',
+				templateUrl: 'release/tpl/404.html',
+				controller: 'homeCtrl'
 			});
 	}]);

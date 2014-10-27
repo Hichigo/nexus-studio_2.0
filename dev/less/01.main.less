@@ -7,24 +7,24 @@ body {
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 	overflow-x: hidden;
+	height: 100%;
 }
 
 .video-line {
 	position: relative;
 	width: 100%;
 	margin-top: 90px;
-	
+	overflow: hidden;
+	img {
+		width: 100%;
+	}
 	.fade-video {
 		position: absolute;
 		top: 0;
 		right: 0;
-		bottom: 4px;
+		bottom: 0;
 		left: 0;
 		background: rgba(0,0,0,.25);
-	}
-	
-	> video {
-		width: 100%;
 	}
 	
 	.made-by {
@@ -59,10 +59,15 @@ body {
 	}
 }
 
+	.nexus-video {
+		display: block;
+	}
+
 .flexible-menu {
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
+	flex-flow: row wrap;
 }
 
 .item {
@@ -126,7 +131,7 @@ body {
 }
 
 .logo {
-	margin-top: -275px;
+	margin-top: -271px;
 }
 
 .logo img {
