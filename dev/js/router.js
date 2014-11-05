@@ -4,9 +4,9 @@ nexusApp.config(['$routeProvider', '$locationProvider',
 //		$locationProvider.hashPrefix('!');
 		$routeProvider.
 			when('/', {
-				redirectTo: '/home',
-				templateUrl: 'release/tpl/home.html',
-				controller: 'homeCtrl'
+				redirectTo: '/home'
+//				templateUrl: 'release/tpl/home.html',
+//				controller: 'homeCtrl'
 			}).
 			when('/home', {
 				templateUrl: 'release/tpl/home.html',
@@ -35,6 +35,6 @@ nexusApp.config(['$routeProvider', '$locationProvider',
 			otherwise({
 				redirectTo: '/404',
 				templateUrl: 'release/tpl/404.html',
-				controller: 'homeCtrl'
+				controller: 'noneCtrl'
 			});
 	}]);
