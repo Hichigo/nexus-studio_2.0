@@ -13,6 +13,7 @@
 	min-height: 90px;
 	background: #eee;
 	box-shadow: 0 -1px 4px rgba(0,0,0,.3);
+	z-index: 99;
 }
 
 .fix-footer-bottom {
@@ -24,6 +25,33 @@
 	min-width: 900px;
 	max-width: 1100px;
 	margin: 0 auto;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+.footer-item {
+	flex: 1 25%;
+	padding: 0 10px;
+	min-height: 90px;
+	h4 {
+		font-weight: 500;
+	}
+	ul {
+		list-style: none;
+		padding-left: 20px;
+		li {
+			padding: 5px 0;
+			a {
+				color: @blue;
+				font-weight: 300;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
 }
 
 .footer-wrap:after {
@@ -41,6 +69,11 @@
 	}
 }
 
+.copyright {
+	text-align: center;
+	padding: 10px 0;
+}
+
 //.footer-soc > .tr > .icon .social {
 //	color: #000;
 //	border: 1px solid;
@@ -48,23 +81,18 @@
 //	margin-right: 5px;
 //	transition: all .4s;
 //}
-//
 //.footer-soc > .tr > .icon .twitter:hover {
 //	color: @twitter;
 //}
-//
 //.footer-soc > .tr > .icon .facebook:hover {
 //	color: @facebook;
 //}
-//
 //.footer-soc > .tr > .icon .google:hover {
 //	color: @google;
 //}
-//
 //.footer-soc > .tr > .icon .vk:hover {
 //	color: @vk;
 //}
-//
 //.footer-soc > .tr > .icon .youtube:hover {
 //	color: @youtube;
 //}

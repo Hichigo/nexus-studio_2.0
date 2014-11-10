@@ -5,11 +5,11 @@ nexusApp.directive('myFooter', function() {
 		replace: true,
 		controller: function($scope) {
 			$scope.social = [
-				{
-					id: 'twitter',
-					xlink: '#twitter',
-					url: '#',
-				},
+//				{
+//					id: 'twitter',
+//					xlink: '#twitter',
+//					url: '#',
+//				},
 				{
 					id: 'google',
 					xlink: '#google',
@@ -30,7 +30,8 @@ nexusApp.directive('myFooter', function() {
 					xlink: '#youtube',
 					url: 'http://www.youtube.com/channel/UCbWoURkJ5nXueJQjWpXEraA?guided_help_flow=3',
 				}
-			];	
+			];
+			$scope.copyrightYear = new Date().getTime();
 		}
   };
 });

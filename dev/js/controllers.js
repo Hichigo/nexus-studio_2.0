@@ -2,14 +2,9 @@ var nexusCtrl = angular.module('nexusCtrl', []);
 
 nexusCtrl.controller('homeCtrl', ['$location', '$scope',
 	function($location, $scope) {
-			$(".my-footer").removeClass("fix-footer-bottom");
+			
 }]).controller('siteCtrl', ['$location', '$scope',
 		function($location, $scope) {
-			if ($(document).height() <= $(window).height()){
-				$(".my-footer").addClass("fix-footer-bottom");
-			}else{
-				$(".my-footer").removeClass("fix-footer-bottom");
-			}
 			var bar = $('.nav').find('.menu > .bar-nav'),
 					link = $('.nav').find('.menu > a');
 			link.removeClass('active-btn');
@@ -20,14 +15,9 @@ nexusCtrl.controller('homeCtrl', ['$location', '$scope',
 			});
 }]).controller('calcCtrl', ['$location', '$scope',
 	function($location, $scope) {
-		$(".my-footer").removeClass("fix-footer-bottom");
+		
 }]).controller('thirdCtrl', ['$location', '$scope',
 		function($location, $scope) {
-			if ($(document).height() <= $(window).height()){
-				$(".my-footer").addClass("fix-footer-bottom");
-			}else{
-				$(".my-footer").removeClass("fix-footer-bottom");
-			}
 			var bar = $('.nav').find('.menu > .bar-nav'),
 					link = $('.nav').find('.menu > a');
 			link.removeClass('active-btn');
@@ -38,11 +28,6 @@ nexusCtrl.controller('homeCtrl', ['$location', '$scope',
 			});
 }]).controller('applicationCtrl', ['$location', '$scope',
 	function($location, $scope) {
-			if ($(document).height() <= $(window).height()){
-				$(".my-footer").addClass("fix-footer-bottom");
-			}else{
-				$(".my-footer").removeClass("fix-footer-bottom");
-			}
 			var bar = $('.nav').find('.menu > .bar-nav'),
 					link = $('.nav').find('.menu > a');
 			link.removeClass('active-btn');
@@ -53,18 +38,13 @@ nexusCtrl.controller('homeCtrl', ['$location', '$scope',
 			});
 }]).controller('aboutCtrl', ['$location', '$scope',
 	function($location, $scope) {
-			if ($(document).height() <= $(window).height()){
-				$(".my-footer").addClass("fix-footer-bottom");
-			}else{
-				$(".my-footer").removeClass("fix-footer-bottom");
-			}
 			$scope.data = {
 				social: [
-					{
-						id: 'twitter',
-						xlink: '#twitter',
-						url: '#',
-					},
+//					{
+//						id: 'twitter',
+//						xlink: '#twitter',
+//						url: '#',
+//					},
 					{
 						id: 'google',
 						xlink: '#google',
@@ -131,9 +111,5 @@ nexusCtrl.controller('homeCtrl', ['$location', '$scope',
 			});
 }]).controller('noneCtrl', ['$location', '$scope',
 		function($location, $scope) {
-			if ($(document).height() <= $(window).height()){
-				$(".my-footer").addClass("fix-footer-bottom");
-			}else{
-				$(".my-footer").removeClass("fix-footer-bottom");
-			}
+			
 }]);

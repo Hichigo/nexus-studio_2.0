@@ -1,11 +1,28 @@
 <footer class="my-footer">
 	<div class="footer-wrap">
-<!--
-		<div class="copyright">
-			© 2014 Nexus-studio.
+		<div class="footer-item">
+			<h4>Сайты</h4>
+			<ul>
+				<li><a href="release/pdf/priceSite.pdf" target="_blank">Цены на сайты</a></li>
+				<li><a href="release/pdf/support.pdf" target="_blank">Цены на поддержку</a></li>
+				<li><a href="site/calculator">Калькулятор цен</a></li>
+			</ul>
 		</div>
--->
-		<div class="footer-soc">
+		<div class="footer-item">
+			<h4>3D Графика</h4>
+			<ul>
+				<li><a href="#">Скоро...</a></li>
+				<li><a href="#">Скоро...</a></li>
+				<li><a href="#">Скоро...</a></li>
+			</ul>
+		</div>
+		<div class="footer-item">
+			<h4>Информация</h4>
+			<ul>
+				<li><a href="/about">Контакты</a></li>
+			</ul>
+		</div>	
+		<div class="footer-item">
 			<h4>Мы в соц. сетях:</h4>
 			<div class="tr">
 				<div class="icon line" ng-repeat="soc in social">
@@ -17,6 +34,6 @@
 				</div>
 			</div>
 		</div>
-		
 	</div>
+	<div class="copyright">Copyright &#169; 2014 - {{ copyrightYear | date:'yyyy' }} nexus-studio</div>
 </footer>

@@ -28,8 +28,8 @@
 		</div>
 		<div class="main-block">
 			<div class="li">
-				<input type="checkbox" name="copyright" id="copyright-1" value="0" data-discount="0">
-				<label for="copyright-1">Готовый дизайн сайта из каталога 0 р.</label>
+				<input type="checkbox" name="design" id="design-0" value="0" data-discount="0">
+				<label for="design-0">Готовый дизайн сайта из каталога 0 р.</label>
 			</div>
 			<div class="li">
 				<input type="checkbox" name="design" id="design-1" value="15000" data-discount="0">
@@ -142,6 +142,22 @@
 			</div>
 		</div>
 	</div>
+<!--
+	<div class="block">
+    {{ blocks.headerText }}
+    <div class="block" ng-repeat="block in blocks">
+      <div class="desc-block">
+    	{{ block.headerText }}
+      </div>
+      <div class="main-block">
+        <div class="li" ng-repeat="line in block.lines">
+          <input type="{{ line.inputType }}" id="{{ line.inputId + $index }}" name="{{ line.inputName }}" value="{{ line.value }}" data-num="{{ line.showBlocks }}" data-discount="{{ line.discount }}">
+          <label for="{{ line.inputId + $index }}">{{ line.labelText + line.value}} р.</label>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
 	<div class="block">
 		<div class="desc-block">
 			Поддержка сайта
