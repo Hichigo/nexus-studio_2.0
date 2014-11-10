@@ -62,7 +62,7 @@
 .tab-pane {
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: flex-start;
+//	justify-content: flex-star;
 	margin: 0 auto;
 	padding: 10px 15px 10px 0;
 }
@@ -111,8 +111,19 @@
 		margin-bottom: 0;
 		text-align: justify;
 	}
-}
 
+	a {
+		color: @blue;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.price {
+	list-style: none;
+	padding: 0;
+}
 .active {
 	background: @orange !important;
 }

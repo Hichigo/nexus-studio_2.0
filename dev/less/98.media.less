@@ -2,17 +2,21 @@
 @orange: #ff5722;
 @gray: #888;
 
-@media (max-width: 920px) {
-	.nav-wrap,
-	.footer-wrap {
-		min-width: 300px;
-	}
+@media (max-width: 360px) {
 	.footer-wrap {
 		flex-flow: column wrap;
 	}
 	.footer-item {
 		flex:none;
 	}
+}
+
+@media (max-width: 920px) {
+	.nav-wrap,
+	.footer-wrap {
+		min-width: 300px;
+	}
+	
 	.item {
 		width: 130px;
 		height: 130px;
