@@ -5,8 +5,8 @@ nexusCtrl.controller('homeCtrl', ['$location', '$scope',
 			
 }]).controller('siteCtrl', ['$location', '$scope',
 		function($location, $scope) {
-			var bar = $('.nav').find('.menu > .bar-nav'),
-					link = $('.nav').find('.menu > a');
+			var bar = $('.header').find('.menu > .bar-nav'),
+					link = $('.header').find('.menu > a');
 			link.removeClass('active-btn');
 			link.eq(1).addClass('active-btn');
 			bar.css({
@@ -18,8 +18,8 @@ nexusCtrl.controller('homeCtrl', ['$location', '$scope',
 		
 }]).controller('thirdCtrl', ['$location', '$scope',
 		function($location, $scope) {
-			var bar = $('.nav').find('.menu > .bar-nav'),
-					link = $('.nav').find('.menu > a');
+			var bar = $('.header').find('.menu > .bar-nav'),
+					link = $('.header').find('.menu > a');
 			link.removeClass('active-btn');
 			link.eq(2).addClass('active-btn');
 			bar.css({
@@ -28,8 +28,8 @@ nexusCtrl.controller('homeCtrl', ['$location', '$scope',
 			});
 }]).controller('applicationCtrl', ['$location', '$scope',
 	function($location, $scope) {
-			var bar = $('.nav').find('.menu > .bar-nav'),
-					link = $('.nav').find('.menu > a');
+			var bar = $('.header').find('.menu > .bar-nav'),
+					link = $('.header').find('.menu > a');
 			link.removeClass('active-btn');
 			link.eq(3).addClass('active-btn');
 			bar.css({
@@ -82,8 +82,8 @@ nexusCtrl.controller('homeCtrl', ['$location', '$scope',
 				]
 			};
 
-			var bar = $('.nav').find('.menu > .bar-nav'),
-					link = $('.nav').find('.menu > a');
+			var bar = $('.header').find('.menu > .bar-nav'),
+					link = $('.header').find('.menu > a');
 			link.removeClass('active-btn');
 			link.eq(4).addClass('active-btn');
 			bar.css({
