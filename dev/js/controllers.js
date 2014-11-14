@@ -68,14 +68,17 @@ nexusCtrl.controller('homeCtrl', ['$location', '$scope',
 				],
 				labels: [
 					{
+						type: 'text',
 						lbl: 'Ваше имя (обязательно)',
 						name: 'name'
 					},
 					{
+						type: 'email',
 						lbl: 'Ваш E-mail (обязательно)',
 						name: 'mail'
 					},
 					{
+						type: 'tel',
 						lbl: 'Ваш номер (необязательно)',
 						name: 'phone'
 					}
