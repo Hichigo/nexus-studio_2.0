@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 		autoprefixer = require('gulp-autoprefixer'),
 		notify = require('gulp-notify'),
 		ngmin = require('gulp-ngmin'),
-		min = require('gulp-minify');;
+		min = require('gulp-minify');
 
 gulp.task('less', function() {
 	gulp.src('dev/less/*.less')
